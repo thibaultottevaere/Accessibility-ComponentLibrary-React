@@ -15,7 +15,7 @@ export default function Home() {
       <nav className="w-full flex justify-between p-4 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit">
         <a href="https://redwoodjs.com/docs" className="text-black dark:text-white">Redwood Documentation</a>
         <a href="https://redwoodjs.com/tutorial" className="text-black dark:text-white">Tutorial</a>
-        <a href="https://community.redwoodjs.com" className="text-black dark:text-white">Community</a>
+        <a href="https://community.redwoodjs.com" className="text-black dark:text-white">Communities</a>
       </nav>
       <Title
         element="h1"
