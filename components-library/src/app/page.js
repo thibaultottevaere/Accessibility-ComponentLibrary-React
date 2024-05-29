@@ -1,6 +1,5 @@
 "use client";
-import Input from "../../public/form/input";
-import Errors from "../../public/form/errors";
+import Select from "../../public/form/select";
 import Submit from "../../public/form/submit";
 export default function Home() {
   const onSubmit = (props) => {
@@ -13,22 +12,13 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.js</code>
         </p>
-        
       </div>
-      <form className="w-full" action={onSubmit}>
-        <select className="w-full p-5 text-black">
-          <option>test1</option>
-          <option>test2</option>
-          <option>test3</option>
-          <option>test4</option>
-          <option>test5</option>
-        </select>
-
-        <Submit
-          style={"flex w-9/12 border border-gray-300 justify-center py-2 px-4 rounded-lg"}
-          value={'Submit form'}
-        />
-      </form>
+      <nav className="w-full flex justify-between p-4 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit">
+        <a href="https://redwoodjs.com/docs" className="text-black dark:text-white">Redwood Documentation</a>
+        <a href="https://redwoodjs.com/tutorial" className="text-black dark:text-white">Tutorial</a>
+        <a href="https://community.redwoodjs.com" className="text-black dark:text-white">Community</a>
+      </nav>
+      <h1 className="text-4xl font-bold text-center">Welcome to your new project</h1>
     </main>
   );
 }
