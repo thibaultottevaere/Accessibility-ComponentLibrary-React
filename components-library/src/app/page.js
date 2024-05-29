@@ -1,10 +1,9 @@
 "use client";
 import Select from "../../public/form/select";
+import Title from "../../public/heading/title";
 import Submit from "../../public/form/submit";
 export default function Home() {
-  const onSubmit = (props) => {
-    console.log(props.get('select'))
-  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -18,7 +17,11 @@ export default function Home() {
         <a href="https://redwoodjs.com/tutorial" className="text-black dark:text-white">Tutorial</a>
         <a href="https://community.redwoodjs.com" className="text-black dark:text-white">Community</a>
       </nav>
-      <h1 className="text-4xl font-bold text-center">Welcome to your new project</h1>
+      <Title
+        element="h1"
+        title="Welcome to your new project"
+        style="text-4xl font-bold text-center"
+      />
     </main>
   );
 }
