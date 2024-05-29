@@ -11,7 +11,7 @@ const Image = ({
 }) => {
     return(
         <div className={styleImage}>
-            <img width={width} height={height} src={src} alt={alt}/>
+            <Image width={width} height={height} src={src} alt={alt}/>
             <figcaption className={styleCaption}>{caption}</figcaption>
         </div>
     );
