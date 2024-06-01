@@ -10,6 +10,7 @@ const Submit = ({
             className={`${style}`}
             type="submit"
             value={value}
+            onSubmit={onSubmit}
         />
     );
 };

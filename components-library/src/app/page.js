@@ -1,7 +1,6 @@
 "use client";
-import Select from "../../public/form/select";
-import Title from "../../public/heading/title";
-import Submit from "../../public/form/submit";
+import NavElement from "../../public/navigation/navElement";
+import Title from "../../public/text/title";
 export default function Home() {
 
   return (
@@ -12,12 +11,18 @@ export default function Home() {
           <code className="font-mono font-bold">src/app/page.js</code>
         </p>
       </div>
-      <nav className="w-full flex justify-between p-4 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit">
-        <a href="https://redwoodjs.com/docs" className="text-black dark:text-white">Redwood Documentation</a>
-        <a href="https://redwoodjs.com/tutorial" className="text-black dark:text-white">Tutorial</a>
-        <a href="https://community.redwoodjs.com" className="text-black dark:text-white">Communities</a>
-      </nav>
+      <NavElement
+        element="a" 
+        itemStyle="w-full flex justify-center text-black bg-gray-200 rounded-xl p-4 cursor-pointer" 
+        linkStyle="" 
+        listStyle="w-full flex justify-center flex-wrap gap-4" 
+        navStyle="w-full flex"
+        options={[{label:"React", text:"React", link:""}, {label:"Vue", text:"Vue", link:""}, {label:"Next", text:"Next", link:""}]}
+        style="w-full p-4 mt-4 text-lg font-bold text-center bg-gray-200 rounded-xl"
+        label="framework"
+      />
       <Title
+        label="title"
         element="h1"
         title="Welcome to your new project"
         style="text-4xl font-bold text-center"
