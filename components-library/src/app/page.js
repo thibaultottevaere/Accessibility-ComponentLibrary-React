@@ -1,6 +1,7 @@
 "use client";
 import NavElement from "../../public/navigation/navElement";
 import Title from "../../public/text/title";
+import Button from "../../public/form/button";
 export default function Home() {
 
   return (
@@ -26,6 +27,11 @@ export default function Home() {
         element="h1"
         title="Welcome to your new project"
         style="text-4xl font-bold text-center"
+      />
+      <Button
+        label="Get Started"
+        style="bg-blue-500 text-white p-4 rounded-xl"
+        type="button"
       />
     </main>
   );

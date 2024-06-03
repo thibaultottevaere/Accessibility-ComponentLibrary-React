@@ -1,11 +1,11 @@
 import React from "react";
 
-const Errors = ({errors, listStyle, errorStyle}) => {
+const Errors = ({errors, listStyle, errorStyle, id}) => {
     return(
-        <ul className={`${listStyle}`}>
-            {errors.map((error) => {
+        <ul className={`${listStyle}`} id={id}>
+            {errors.map((error, index) => {
                 return(
-                    <li className={`${errorStyle}`}>{error.message}</li>
+                    <li key={index} aria-roledescription="alert" className={`${errorStyle}`}>{error.message}</li>
                 )
             })}
         </ul>

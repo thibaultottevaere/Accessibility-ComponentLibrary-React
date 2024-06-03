@@ -1,8 +1,8 @@
 import React from "react";
 
-const Error = ({message, style, styleMessage}) => {
+const Error = ({message, style, styleMessage, id}) => {
     return(
-        <div className={`${style}`}>
+        <div aria-roledescription="alert" className={`${style}`} id={id}>
             <p className={`${styleMessage}`}>{message}</p>
         </div>
     );
