@@ -1,5 +1,17 @@
 import React from "react";
 
+/**
+ * Title is a customizable title component for React applications.
+ *
+ * @component
+ * @param {string} element - The element is the preferred tag of the title.
+ * @param {string} title - The title is the text of the title.
+ * @param {string} label - The label is an label attribute of the title.
+ * @param {string} style - Additional CSS classes for the title.
+ * @returns {React.Element} A React title element with custom properties.
+ */
+
+
 const Title = ({element, title, style, label}) => {
     return(
         <>

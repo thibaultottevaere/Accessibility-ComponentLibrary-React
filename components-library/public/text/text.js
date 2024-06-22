@@ -1,5 +1,17 @@
 import React from "react";
 
+/**
+ * Text is a customizable text component for React applications.
+ *
+ * @component
+ * @param {string} element - The element is the preferred type of text.
+ * @param {string} text - The text is the text of the component.
+ * @param {string} id - The id is an id of the text.
+ * @param {string} label - The label is an label attribute of the text.
+ * @param {string} style - Additional CSS classes for the text.
+ * @returns {React.Element} A React text element with custom properties.
+ */
+
 const Text = ({element, text, style, id, label}) => {
     return(
         <>

@@ -2,6 +2,8 @@
 import NavElement from "../../public/navigation/navElement";
 import Title from "../../public/text/title";
 import Button from "../../public/form/button";
+import Select from "../../public/form/select";
+
 export default function Home() {
 
   return (
@@ -12,6 +14,17 @@ export default function Home() {
           <code className="font-mono font-bold">src/app/page.js</code>
         </p>
       </div>
+      <Select
+        id="framework"
+        label="Select a framework"
+        name="framework"
+        options={["React", "Vue", "Next"]}
+        required={true}
+        role="select"
+        selectStyle="w-full flex justify-center"
+        style="w-full p-4 mt-4 text-lg font-bold text-center bg-gray-800 rounded-xl"
+      />
+      
       <NavElement
         element="a" 
         itemStyle="w-full flex justify-center text-black bg-gray-200 rounded-xl p-4 cursor-pointer" 
@@ -29,9 +42,10 @@ export default function Home() {
         style="text-4xl font-bold text-center"
       />
       <Button
-        label="Get Started"
-        style="bg-blue-500 text-white p-4 rounded-xl"
+        text="Get Started"
+        style="bg-blue-200 text-black p-4 rounded-xl"
         type="button"
+        name="button"
       />
     </main>
   );
